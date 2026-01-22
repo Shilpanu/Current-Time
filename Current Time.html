@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Time Display</title>
+</head>
+<style>
+    h1 {
+        color: rgb(111, 0, 255);
+        text-align: center;
+        font-size: 35px;
+    }
+    p {
+        font-size: 25px;
+        color: rgba(236, 101, 10, 0.849);
+    }
+    button {
+        font-size: 20px;
+        padding: 10px 20px;
+        background-color: rgb(127, 195, 216);
+        color: rgb(247, 10, 10);
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+</style>
+
+</h1>
+<body>
+    <center>
+        <h1>Current Time</h1>
+    <p id="timeDisplay">Click button to see time</p>
+    <button onclick="showTime()">Show Current Time</button>
+</center>
+    <script>
+        function showTime() {
+            let now = new Date();
+            let timeString = now.toLocaleTimeString();
+            document.getElementById("timeDisplay").innerHTML = 
+                `🕒 Current time is: ${timeString}`;
+        }
+    </script>
+</body>
+</html>
+    
+</body>
+</html>
